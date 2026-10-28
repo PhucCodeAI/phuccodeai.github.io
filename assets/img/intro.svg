@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 96" width="120" height="96" role="img" aria-label="Sơ đồ các node kết nối">
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#e)" stroke-width="2.5" stroke-linecap="round" opacity="0.55">
+    <path d="M20 26 58 14M20 26 52 52M58 14 96 30M52 52 96 30M52 52 86 76M20 26 26 72M26 72 52 52"/>
+  </g>
+  <g fill="url(#e)">
+    <circle cx="20" cy="26" r="8"/>
+    <circle cx="58" cy="14" r="6"/>
+    <circle cx="96" cy="30" r="9"/>
+    <circle cx="26" cy="72" r="6"/>
+    <circle cx="86" cy="76" r="7"/>
+  </g>
+  <circle cx="52" cy="52" r="13" fill="url(#e)"/>
+  <circle cx="52" cy="52" r="5" fill="#fff"/>
+</svg>

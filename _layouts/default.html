@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'vi' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/favicon.svg' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="{{ site.author }}" width="32" height="32">
+        <span>{{ site.title }}</span>
+      </a>
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}">Bài viết</a>
+        <a href="https://github.com/{{ site.github_username }}">Portfolio</a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      © {{ 'now' | date: '%Y' }} {{ site.author }}
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/toc.js' | relative_url }}" type="module"></script>
+  <script src="{{ '/assets/js/charts.js' | relative_url }}" type="module"></script>
+  <script src="{{ '/assets/js/mermaid-init.js' | relative_url }}" type="module"></script>
+</body>
+</html>

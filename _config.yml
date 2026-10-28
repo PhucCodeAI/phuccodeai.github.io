@@ -1,0 +1,35 @@
+title: PhucCodeAI
+description: Ghi chép các kinh nghiệm, bài học trong quá trình học tập, làm việc và nghiên cứu với vai trò AI Engineer.
+author: PhucCodeAI
+url: https://phuccodeai.github.io
+baseurl: ""
+lang: vi
+
+github_username: PhucCodeAI
+linkedin_username: phuccodeai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: /blog/:title/
+timezone: Asia/Ho_Chi_Minh
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

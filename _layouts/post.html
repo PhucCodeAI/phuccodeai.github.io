@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 220 | plus: 1 %}
+{% if page.toc %}<div class="read-progress" aria-hidden="true"><span></span></div>{% endif %}
+<div class="post-shell{% if page.toc %} has-toc{% endif %}">
+  <article class="post">
+    <header class="post-header">
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+        · {{ minutes }} phút đọc
+      </p>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+      {% if page.tags.size > 0 %}
+      <ul class="tags">
+        {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </header>
+
+    {% if page.toc %}
+    <details class="toc-inline" hidden>
+      <summary>
+        <span class="toc-inline-label">Mục lục</span>
+        <span class="toc-inline-count"></span>
+      </summary>
+      <ol class="toc-inline-list"></ol>
+    </details>
+    {% endif %}
+
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <a href="{{ '/' | relative_url }}">← Tất cả bài viết</a>
+    </footer>
+  </article>
+
+  {% if page.toc %}
+  <aside class="toc-rail" aria-label="Mục lục" hidden>
+    <p class="toc-rail-label">Trên trang này</p>
+    <ol class="toc-rail-list"></ol>
+    <a class="toc-top" href="#">↑ Lên đầu trang</a>
+  </aside>
+  {% endif %}
+</div>

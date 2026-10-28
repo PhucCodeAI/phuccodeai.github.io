@@ -24,6 +24,10 @@ plugins:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /assets/img/og/default.png
+  - scope:
+      path: ""
       type: posts
     values:
       layout: post

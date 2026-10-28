@@ -3,6 +3,7 @@ title: "Người dân không hỏi theo cách luật được viết"
 description: "Hành trình đưa Hit@5 tìm văn bản pháp luật từ 78% lên 90% trên 400 câu hỏi khó: cái gì thật sự tạo ra kết quả và những mẹo phổ biến nào lại làm kết quả tệ đi."
 tags: [RAG, Retrieval, Legal AI, Evaluation, Embedding, Vector Search, BM25]
 date: 2026-10-18 20:00:00 +0700
+image: /assets/img/og/nguoi-dan-khong-hoi-theo-cach-luat-viet.png
 toc: true
 ---
 

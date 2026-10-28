@@ -3,6 +3,7 @@ title: "VLM hay OCR pipeline: chuyện dựng hệ thống đọc giấy tờ ch
 description: "VLM đọc thẳng ảnh ra JSON nghe rất hay, cho đến khi nó bịa một con số mà tài liệu không có. Chuyện quay về pipeline OCR năm bước, biến 10 mẫu giấy tờ thành 20.000 mẫu huấn luyện. Và vì sao một model cỡ 0,6 tỷ tham số là đủ."
 tags: [Document AI, OCR, VLM, Fine-tuning, Synthetic Data]
 date: 2026-07-12 21:00:00 +0700
+image: /assets/img/og/pipeline-ocr-tu-anh-den-json.png
 toc: true
 ---
 

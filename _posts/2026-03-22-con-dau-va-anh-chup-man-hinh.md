@@ -3,6 +3,7 @@ title: "Chỉ một class YOLO có độ chính xác thấp: chuyện xác thự
 description: "Mọi class đều lên điểm, trừ một vạch xám mảnh giữa hai trang. Ba giả thuyết, hai lần sai. Thủ phạm là một augmentation mà Ultralytics bật sẵn khi train. Kèm theo: chấm điểm con dấu cùng lý do 99% accuracy có thể chẳng nói lên điều gì."
 tags: [Computer Vision, YOLO, Data Labeling, Imbalanced Data]
 date: 2026-03-22 22:30:00 +0700
+image: /assets/img/og/con-dau-va-anh-chup-man-hinh.png
 toc: true
 ---
 
